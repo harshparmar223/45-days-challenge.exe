@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+   int age;
+   
+  printf("Enter your age ");
+  scanf("%d",&age);
+
+//eligible to vote
+if(age>18 && age<100){
+    printf("you are eligible to vote");}
+    
+    
+    
+    //not eligible to vote
+    else if(age<18){
+        printf("you are not eligible to vote yet");
+    }
+    
+    
+    //you are an exception
+    else
+    printf("You can vote if you are born and not dead");
+
+    return 0;
+}
